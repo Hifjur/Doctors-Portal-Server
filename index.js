@@ -7,11 +7,7 @@ const { query } = require('express');
 const admin = require("firebase-admin");
 const port = process.env.PORT || 5000
 
-
-
-
-
-
+//jwt verification
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 admin.initializeApp({
